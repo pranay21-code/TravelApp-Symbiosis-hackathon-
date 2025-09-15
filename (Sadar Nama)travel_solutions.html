@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Safarnama - Travel Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0077cc;
+        }
+
+        .user-greeting {
+            font-size: 1rem;
+            color: #444;
+            margin-top: 10px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .trip {
+            background-image: url('https://source.unsplash.com/800x600/?travel');
+        }
+
+        .itinerary {
+            background-image: url('https://source.unsplash.com/800x600/?map,travel');
+        }
+
+        .assistance {
+            background-image: url('https://source.unsplash.com/800x600/?callcenter');
+        }
+
+        .button-row {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn {
+            padding: 12px 18px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 48%;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .card {
+                height: 120px;
+                font-size: 1rem;
+            }
+
+            .btn {
+                font-size: 0.95rem;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">🌍 SAFARNAMA</div>
+        <div class="user-greeting">
+            Hey, <strong>Malini Shah!</strong><br>
+            <small>@malini.shah</small>
+        </div>
+    </div>
+
+    <div class="section-title">Travel Solutions</div>
+
+    <div class="card-container">
+        <div class="card trip">
+            Trip Creation
+        </div>
+
+        <div class="card itinerary">
+            Itinerary Maker
+        </div>
+
+        <div class="card assistance">
+            Smart Assistance
+        </div>
+    </div>
+
+    <div class="button-row">
+        <a href="#" class="btn btn-primary">Sharing</a>
+        <a href="#" class="btn btn-danger">Panic Button ⚠️</a>
+    </div>
+
+</body>
+</html>
